@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title>Document</title>
 </head>
 
@@ -55,31 +56,34 @@
                 asperiores magni eius aut sint explicabo architecto earum laudantium quae, expedita exercitationem
                 possimus obcaecati repellendus quisquam!</p>
 
-            <!--Checkout-->    
+            <!--Checkout-->
             <div id="checkout">
                 <div id="checkout_header">
                     <h1>Contrate Agora</h1>
                 </div>
                 <div id="checkout_content">
-                    <form action="">
+                    <form action="#">
 
                         <label for="complete_name">Nome completo:</label>
-                        <input name="name" id="complete_name" type="text" placeholder="Seu nome">
+                        <input name="name" id="complete_name" type="text" placeholder="Seu nome" minlength="6"
+                            maxlength="30" required>
 
                         <label for="tel_number">Numero:</label>
-                        <input name="number" id="tel_number" type="number" placeholder="(99) 01234-5678">
+                        <input name="number" id="tel_number" type="text" placeholder="(99) 01234-5678" minlength="12"
+                            maxlength="12" required>
 
                         <label for="company">Compania:</label>
-                        <input name="company" id="company" type="text" placeholder="Nome da empresa">
+                        <input name="company" id="company" type="text" placeholder="Nome da empresa" minlength="3"
+                            required>
 
                         <label for="email">Email:</label>
-                        <input name="email" id="email" type="email" placeholder="exemplo@gmail.com">
+                        <input name="email" id="email" type="email" placeholder="exemplo@gmail.com" required>
 
                         <button id="submit">Contratar</button>
                     </form>
                 </div>
             </div>
-            
+
             <!--Avaliações-->
             <div id="testimonials">
                 <h1>Avaliações</h1>
@@ -96,7 +100,8 @@
                         <i class="fa-solid fa-star"></i>
                     </span>
                 </div>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti nesciunt nemo harum iure, asperiores ipsum voluptatem perferendis nisi </p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti nesciunt nemo harum iure,
+                    asperiores ipsum voluptatem perferendis nisi </p>
 
                 <br>
 
@@ -142,6 +147,8 @@
             </div>
         </footer>
     </main>
+
+    <script src="javascript/script.js"></script>
 </body>
 
 </html>
