@@ -70,7 +70,7 @@ ul{
         align-items: center;
         justify-content: center;
         width: 100%;
-        height: 200vh;
+        height: 185vh;
         padding: 60px 0rem 0px;
         margin-top: 30px;
     }
@@ -84,6 +84,10 @@ ul{
     #header{
         width: 100%;
         padding: 60px 0;
+    }
+
+    #header img{
+        margin-bottom: -80px;   
     }
 
     #header h1{
